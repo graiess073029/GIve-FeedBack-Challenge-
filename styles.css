@@ -1,0 +1,289 @@
+@font-face {
+    font-family:OverPass;
+    src: url("./Overpass-VariableFont_wght.ttf");
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0ch;
+    outline: none;
+    overflow: hidden;
+    list-style: none;
+}
+
+h1{
+    font-size: 32px;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(216, 12%, 8%);
+}
+
+@media screen and (min-width:992px){
+    body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.root{
+    border-radius: 30px;
+    width: 460px;
+    height: 450px;
+    background-color: hsl(213, 19%, 18%);
+}
+
+.root_inner{
+    padding: 7%;
+    width: 86%;
+    height: 86%;
+}
+
+.rate_section header{
+    margin-bottom: 20px;
+}
+
+.rate_section header div{
+    width: 50px;
+    height: 50px;
+    background-color: hsla(216, 12%, 54%, 0.206);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rate_section main{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+main h1{
+    color: hsl(0, 0%, 100%);
+    font-family:Overpass;
+    font-weight: 700;
+}
+
+main p{
+    color: hsl(216, 12%, 54%);
+    line-height: 30px;
+    font-family:Overpass;
+}
+
+.rate_section ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rate_section ul li{
+    width: 50px;
+    height: 50px;
+    color: hsl(216, 12%, 54%);
+    font-family:Overpass;
+    background-color:hsla(216, 12%, 54%, 0.206);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rate_section main button{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    font-family: Overpass;
+    font-weight: 100;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+.rate_section main button:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.rate_section main ul li:hover{
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+
+}
+
+.rate_section{
+    display: block;
+}
+
+.thank_section{
+    display: none;
+    flex-direction: column;
+    align-items: center ;
+    gap: 40px;
+    text-align: center;
+    height: 100%;
+}
+
+.rate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(216, 12%, 54%, 0.206);
+    width: max-content;
+    padding: 8px 18px 8px 18px;
+    color: hsl(25, 97%, 53%);
+    font-family: Overpass;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+.thank_section header{
+    display: flex;
+    justify-content: center;
+}
+
+.thank_section h1{
+    margin-bottom: 10px;
+}
+ 
+    
+}
+
+@media screen and (max-width:768px){
+    body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.root{
+    border-radius: 30px;
+    width: 90%;
+    height: 47%;
+    background-color: hsl(213, 19%, 18%);
+}
+
+.root_inner{
+    padding: 7%;
+    width: 86%;
+    height: 86%;
+}
+
+.rate_section header{
+    margin-bottom: 20px;
+}
+
+.rate_section header div{
+    width: 50px;
+    height: 50px;
+    background-color: hsla(216, 12%, 54%, 0.206);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rate_section main{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+main h1{
+    color: hsl(0, 0%, 100%);
+    font-family:Overpass;
+    font-weight: 700;
+}
+
+main p{
+    color: hsl(216, 12%, 54%);
+    line-height: 30px;
+    font-family:Overpass;
+}
+
+.rate_section ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rate_section ul li{
+    width: 50px;
+    height: 50px;
+    color: hsl(216, 12%, 54%);
+    font-family:Overpass;
+    background-color:hsla(216, 12%, 54%, 0.206);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rate_section main button{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    font-family: Overpass;
+    font-weight: 100;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+.rate_section main button:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.rate_section main ul li:hover{
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+
+}
+
+.rate_section{
+    display: block;
+}
+
+.thank_section{
+    display: none;
+    flex-direction: column;
+    align-items: center ;
+    gap: 40px;
+    text-align: center;
+    height: 100%;
+}
+
+.rate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(216, 12%, 54%, 0.206);
+    width: max-content;
+    padding: 8px 18px 8px 18px;
+    color: hsl(25, 97%, 53%);
+    font-family: Overpass;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+.thank_section header{
+    display: flex;
+    justify-content: center;
+}
+
+.thank_section h1{
+    margin-bottom: 10px;
+}
+ 
+    
+}

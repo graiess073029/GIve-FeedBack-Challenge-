@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="root">
+    <div class="root_inner">
+        <section class="rate_section">
+          <header>
+            <div>
+              <img src="./images/icon-star.svg">
+            </div>  
+        </header>
+        <main>
+          <h1>How did we do ?</h1>
+          <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+          <ul class="rating">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+          <button>Submit</button>
+        </main> 
+        </section>
+        <section class="thank_section">
+
+          <header>
+            <img src="./images/illustration-thank-you.svg">
+          </header>
+
+          <div class="rate">
+            <p>You selected 4 out of 5</p>
+          </div>
+
+          <main>
+            <h1>Thank you!</h1>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+
+          </main>
+        </section>
+    </div>
+  </div>
+
+  <script>
+    var rate = undefined
+    var precedent = undefined
+    document.addEventListener("click",(event)=>{
+      if(event.target.tagName === "LI"){    
+        if(precedent != undefined){
+        precedent.style.backgroundColor = "hsla(216, 12%, 54%, 0.206)"
+        precedent.style.color = "hsl(216, 12%, 54%)"} 
+        event.target.style.cursor = "pointer"
+        event.target.style.backgroundColor = "hsl(25, 97%, 53%)"
+        event.target.style.color = "hsl(0, 0%, 100%)"
+        precedent = event.target
+        rate = event.target.textContent
+        console.log(rate)
+      }
+      else if (event.target.tagName === "BUTTON" && rate != undefined ){
+        document.getElementsByClassName("rate_section")[0].style.display = "none"
+        document.getElementsByClassName("thank_section")[0].style.display = "flex"
+        document.getElementsByClassName("rate")[0].children[0].textContent = `You selected ${rate} out of 5` 
+
+      }
+    })
+  </script>
+
+
+  
+
+</body>
+</html>
